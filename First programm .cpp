@@ -7,7 +7,8 @@
  */
 #include <iostream>
 #include <unistd.h> // for sleep() function (not standart ANSI С)
-
+#include <string>
+#include<Windows.h> //для Sleep()
 using namespace std;
 
 int main()
@@ -21,6 +22,5 @@ int main()
   cin  >> name;
   cout << endl;
   cout << "Hello " << name << endl;
-  sleep(2);
-  
+  Sleep(2000);                      //только в милисекундах и #include<unistd.h> - нужно удалить 
 }
